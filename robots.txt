@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /contact.html
+Disallow: /testing.html
+Disallow: /images/
+
+User-agent: GPTBot
+Disallow: /
+User-agent: Anthropic-Claude
+Disallow: /
+User-agent: CCBot
+Disallow: /

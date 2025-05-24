@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noai, noimageai">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew Scheinman | Certifications</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    /* Banner Wrapper */
+    .cert-banner-wrapper {
+      overflow: hidden;
+      background: #1e1e1e;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      padding: 1rem 0;
+      margin-bottom: 3rem;
+      position: relative;
+      user-select: none;
+    }
+
+    /* Banner container scrolls left */
+    .cert-banner {
+      display: flex;
+      align-items: center;
+      animation: scrollCerts 40s linear infinite;
+    }
+
+    /* Individual certificate container */
+    .cert-item {
+      flex: none;
+      margin: 0 2rem;
+      text-align: center;
+      color: #48b0f7;
+      font-weight: 600;
+      font-family: 'Segoe UI', sans-serif;
+      min-width: 140px;
+    }
+
+    /* Titles above images */
+    .cert-title {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    /* Certificate images */
+    .cert-image {
+      width: 140px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(72, 176, 247, 0.6);
+      background: #121212;
+    }
+
+    /* Keyframes for infinite scroll */
+    @keyframes scrollCerts {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Pause on hover */
+    .cert-banner-wrapper:hover .cert-banner {
+      animation-play-state: paused;
+      cursor: grab;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .cert-item {
+        margin: 0 1rem;
+        min-width: 100px;
+      }
+      .cert-title {
+        font-size: 0.9rem;
+      }
+      .cert-image {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+
+  <!-- Modal for expanded certificate -->
+  <div class="modal-overlay" id="modalOverlay" tabindex="-1" aria-modal="true" role="dialog" aria-label="Expanded certificate image">
+    <img src="" alt="" class="modal-image" id="modalImage" />
+  </div>
+
+<body>
+  <div id="imageModal" class="modal" style="display:none;">
+    <span id="modalClose" class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Expanded certificate" />
+  </div>
+
+
+  <header class="site-header">
+    <h1><a href="/">Matthew Scheinman</a></h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="certificates.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Certifications & Skills</h2>
+    <p>Proven Adobe expertise and hands-on creative experience</p>
+  </section>
+
+  <div class="cert-banner-wrapper" aria-label="Certificate scrolling banner">
+    <div class="cert-banner" id="certBanner">
+      <!-- Certificate #1 -->
+      <div class="cert-item">
+        <div class="cert-title">Adobe Photoshop – May 2024</div>
+        <img src="/images/photoshop.png" alt="Adobe Photoshop Certificate" class="cert-image" />
+      </div>
+
+      <!-- Certificate #2 -->
+      <div class="cert-item">
+        <div class="cert-title">Adobe Illustrator – May 2023</div>
+        <img src="/images/illustrator.png" alt="Adobe Illustrator Certificate" class="cert-image" />
+      </div>
+
+      <!-- Certificate #3 -->
+      <div class="cert-item">
+        <div class="cert-title">Adobe After Effects – Dec 2023</div>
+        <img src="/images/aftereffects.png" alt="Adobe After Effects Certificate" class="cert-image" />
+      </div>
+
+      <!-- Certificate #4 -->
+      <div class="cert-item">
+        <div class="cert-title">Adobe Visual Design – May 2023</div>
+        <img src="/images/visualdesign.png" alt="Adobe Visual Design Certificate" class="cert-image" />
+      </div>
+
+    <!-- Certificate #5 -->
+      <div class="cert-item">
+        <div class="cert-title">YouScience Computer Programming I – Nov 2024</div>
+        <img src="/images/compprogram1.jpeg" alt="YouScience Computer Programming I" class="cert-image" />
+      </div>
+
+    <!-- Certificate #6 -->
+    <div class="cert-item">
+      <div class="cert-title">YouScience Computer Science Principals – Nov 2024</div>
+      <img src="/images/compsciprincp.jpeg" alt="YouScience Computer Science Principals" class="cert-image" />
+    </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="cert-item">
+        <div class="cert-title">Adobe Photoshop – May 2024</div>
+        <img src="/images/photoshop.png" alt="Adobe Photoshop Certificate" class="cert-image" />
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-title">Adobe Illustrator – May 2023</div>
+        <img src="/images/illustrator.png" alt="Adobe Illustrator Certificate" class="cert-image" />
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-title">Adobe After Effects – Dec 2023</div>
+        <img src="/images/aftereffects.png" alt="Adobe After Effects Certificate" class="cert-image" />
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-title">Adobe Visual Design – May 2023</div>
+        <img src="/images/visualdesign.png" alt="Adobe Visual Design Certificate" class="cert-image" />
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-title">YouScience Computer Programming I – Nov 2024</div>
+        <img src="/images/compprogram1.jpeg" alt="YouScience Computer Programming I" class="cert-image" />
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-title">YouScience Computer Science Principals – Nov 2024</div>
+        <img src="/images/compsciprincp.jpeg" alt="YouScience Computer Science Principals" class="cert-image" />
+      </div>
+    </div>
+  </div>
+
+  <section class="experience-section" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
+    <h2>Professional Skills & Experience</h2>
+    <ul>
+      <li>Certified Adobe professional in Photoshop, Illustrator, After Effects, and Visual Design</li>
+      <li>Over 5 years of experience in digital design, photo manipulation, and creative direction</li>
+      <li>Specialized in visual storytelling, branding, and cinematic design for web and video</li>
+      <li>Proficient in layout, typography, color theory, and composition</li>
+      <li>Experienced in collaborative and solo creative work for freelance clients and agencies</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Matthew Scheinman</p>
+  </footer>
+</body>
+</html>
