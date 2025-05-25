@@ -281,3 +281,41 @@ input, textarea {
 .cookie-consent button:hover {
   background-color: #3098df;
 }
+.portfolio-category {
+  margin-bottom: 3rem;
+}
+.portfolio-category h3 {
+  margin-bottom: 1rem;
+  color: #48b0f7;
+  font-size: 1.5rem;
+}
+.portfolio-toggle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: 2px solid #48b0f7;
+  color: #48b0f7;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover,
+.toggle-btn.active {
+  background: #48b0f7;
+  color: #121212;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
