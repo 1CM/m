@@ -1,9 +1,9 @@
+<!-- portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
-<meta name="robots" content="noindex, nofollow">
-<meta name="robots" content="noai, noimageai">
 <head>
   <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow, noai, noimageai" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Matthew Scheinman</title>
   <link rel="stylesheet" href="style.css" />
@@ -13,6 +13,7 @@
   <div id="cookieConsent" class="cookie-consent">
     This site uses cookies. <button onclick="acceptCookies()">Got it</button>
   </div>
+
   <header class="site-header">
     <h1><a href="/">Matthew Scheinman</a></h1>
     <nav>
@@ -26,14 +27,33 @@
     </nav>
   </header>
 
-  <section>
-    <h2>My Work</h2>
-    <div class="gallery">
-      <img src="photo1.jpg" alt="Image 1" />
-      <img src="photo2.jpg" alt="Image 2" />
-      <img src="photo3.jpg" alt="Image 3" />
-    </div>
-  </section>
+  <main>
+    <section>
+      <h2>Portfolio</h2>
+      <div class="portfolio-toggle">
+        <button class="toggle-btn active" data-target="photography">Photography</button>
+        <button class="toggle-btn" data-target="design">Design</button>
+      </div>
+
+      <div id="photography" class="portfolio-category visible">
+        <h3>Digital Photography</h3>
+        <div class="gallery">
+          <img src="photo1.jpg" alt="Sunset Landscape" class="cert-image" />
+          <img src="photo2.jpg" alt="Urban Scene" class="cert-image" />
+          <img src="photo3.jpg" alt="Nature Close-up" class="cert-image" />
+        </div>
+      </div>
+
+      <div id="design" class="portfolio-category hidden">
+        <h3>Digital Design</h3>
+        <div class="gallery">
+          <img src="design1.jpg" alt="Poster Design" class="cert-image" />
+          <img src="design2.jpg" alt="Social Media Graphic" class="cert-image" />
+          <img src="design3.jpg" alt="Typography Experiment" class="cert-image" />
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Matthew Scheinman</p>
