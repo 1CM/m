@@ -319,3 +319,20 @@ input, textarea {
 .visible {
   display: block;
 }
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.blog-list li a {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  transition: color 0.3s;
+}
+
+.blog-list li a:hover {
+  color: #48b0f7;
+  text-decoration: underline;
+}
