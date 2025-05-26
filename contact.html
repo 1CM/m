@@ -18,6 +18,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -32,9 +33,12 @@
         <h1>Contact:</h1>
         <div class="contact-block">
           <h3>Inquiries:</h3>
-          <p>Business Email: <a href="mailto:hello@button.tk">hello@button.tk</a><br>
-             Business Phone: +1 (929) 274-0855<br>
-             <a href="https://linkedin.com/in/-matthew">https://linkedin.com/in/-matthew</a><br>
+          <p>
+            Business Email: <a href="mailto:hello@button.tk">hello@button.tk</a><br>
+            (Will respond with a different email)<br>
+            Business Phone: +1 (929) 274-0855<br>
+            (Texting Only)<br>
+            <a href="https://linkedin.com/in/-matthew">linkedin.com/in/-matthew</a>
           </p>
         </div>
       </div>
@@ -42,7 +46,15 @@
 
     <section class="contact-form-section">
       <h2>Send a Message</h2>
-      <form action="submit-form.php" method="POST">
+      <p>Use a real email address. Otherwise we will not receive your message.</p><br>
+      <form id="contactForm">
+        <!-- Formspree endpoint -->
+        <input type="hidden" name="_replyto" value="" />
+        <input type="hidden" name="_subject" value="New submission!" />
+        <input type="hidden" name="_gotcha" />
+        <!-- Honeypot -->
+        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
